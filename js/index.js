@@ -33,6 +33,7 @@ function orderNum() {
     ) {
       InfoBox.style.display = "block";
       InfoWinner.innerHTML = `"X" mutloq g'olib`;
+      InfoWinner.style.color = "rgba(255, 0, 0, 0.654)";
     };
 
     if (
@@ -42,7 +43,23 @@ function orderNum() {
     ) {
       InfoBox.style.display = "block";
       InfoWinner.innerHTML = `"O" mutloq g'olib`;
+      InfoWinner.style.color = "green";
     };
+
+    let allFilled = true;
+    for (let i = 0; i < innerIcon.length; i++) {
+      if (
+        !innerIcon[i].classList.contains("fa-x") &&
+        !innerIcon[i].classList.contains("fa-o")
+      ) {
+        allFilled = false;
+      }
+    }
+
+    if (allFilled) {
+      InfoBox.style.display = "block";
+      InfoWinner.innerHTML = `Durang!`;
+    }
 
   }
 };
