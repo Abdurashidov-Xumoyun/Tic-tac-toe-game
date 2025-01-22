@@ -1,3 +1,32 @@
+.D_none-box {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.info_box {
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(45deg, rgba(128, 128, 128, 0.883), rgba(255, 255, 255, 0.376), rgba(128, 128, 128, 0.883));
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 40vh;
+  border: 2px solid rgb(110, 110, 110);
+}
+
+.info_winner {
+  color: rgb(31, 196, 72);
+  font-size: 3rem;
+}
+
+.active {
+  display: block;
+}
+
 .center_container {
   width: 100%;
   display: flex;
@@ -102,19 +131,24 @@
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
   }
+
   .game_boxes i {
     font-size: 4rem;
   }
+
   .title {
     font-size: 20px;
   }
+
   .bottom_text {
     font-size: 20px;
   }
+
   .bottom_text #or {
     font-size: 30px;
   }
+
+  .info_winner {
+    font-size: 2rem;
+  }
 }
-
-
-
